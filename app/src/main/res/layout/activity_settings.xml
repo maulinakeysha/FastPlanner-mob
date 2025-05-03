@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101010"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#FECA00"
+        android:paddingStart="25dp"
+        android:textColor="@android:color/black"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_back"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+        app:layout_constraintStart_toStartOf="@+id/btn_back"
+        app:layout_constraintTop_toTopOf="@+id/btn_back" />
+
+    <TextView
+        android:id="@+id/Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Settings"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="350dp"
+        android:layout_height="410dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/box"
+        android:drawablePadding="8dp"
+        android:hint="Personal Data"
+        android:paddingStart="50dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Settings" />
+
+    <TextView
+        android:id="@+id/personaldata"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/ractangletext"
+        android:drawablePadding="8dp"
+        android:hint="Personal Data"
+        android:paddingStart="50dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Settings" />
+
+    <TextView
+        android:id="@+id/Aboutme"
+        android:layout_width="123dp"
+        android:layout_height="38dp"
+        android:layout_alignTop="@+id/btn_back"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="76dp"
+        android:layout_toEndOf="@+id/btn_back"
+        android:text="About Me"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Settings" />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/ractangletext"
+        android:drawablePadding="8dp"
+        android:hint="Account Information"
+        android:paddingStart="50dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personaldata" />
+
+    <ImageView
+        android:id="@+id/iconperdat"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/perdat"
+        app:layout_constraintBottom_toBottomOf="@+id/personaldata"
+        app:layout_constraintStart_toStartOf="@+id/personaldata"
+        app:layout_constraintTop_toTopOf="@+id/personaldata"
+        app:layout_constraintVertical_bias="0.433" />
+
+    <ImageView
+        android:id="@+id/iconperdat2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="280dp"
+        android:src="@drawable/next"
+        app:layout_constraintBottom_toBottomOf="@+id/personaldata"
+        app:layout_constraintStart_toStartOf="@+id/personaldata"
+        app:layout_constraintTop_toTopOf="@+id/personaldata"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <ImageView
+        android:id="@+id/iconacc"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/acc"
+        app:layout_constraintBottom_toBottomOf="@+id/account"
+        app:layout_constraintStart_toStartOf="@+id/account"
+        app:layout_constraintTop_toTopOf="@+id/account"
+        app:layout_constraintVertical_bias="0.433" />
+
+    <ImageView
+        android:id="@+id/iconacc2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="280dp"
+        android:src="@drawable/next"
+        app:layout_constraintBottom_toBottomOf="@+id/account"
+        app:layout_constraintStart_toStartOf="@+id/account"
+        app:layout_constraintTop_toTopOf="@+id/account"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/ractangletext"
+        android:drawablePadding="8dp"
+        android:hint="Notification"
+        android:paddingStart="50dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reminder" />
+
+    <TextView
+        android:id="@+id/reminder"
+        android:layout_width="123dp"
+        android:layout_height="38dp"
+        android:layout_alignTop="@+id/btn_back"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/btn_back"
+        android:text="Reminder"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account" />
+
+    <ImageView
+        android:id="@+id/iconnotif"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/notif"
+        app:layout_constraintBottom_toBottomOf="@+id/notification"
+        app:layout_constraintStart_toStartOf="@+id/notification"
+        app:layout_constraintTop_toTopOf="@+id/notification"
+        app:layout_constraintVertical_bias="0.433" />
+
+    <ImageView
+        android:id="@+id/iconnotif2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="280dp"
+        android:src="@drawable/next"
+        app:layout_constraintBottom_toBottomOf="@+id/notification"
+        app:layout_constraintStart_toStartOf="@+id/notification"
+        app:layout_constraintTop_toTopOf="@+id/notification"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#000000"
+        android:gravity="center_horizontal"
+        android:paddingTop="11dp"
+        android:src="@drawable/logout"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iconlogout"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_marginStart="180dp"-->
+<!--            android:src="@drawable/img_6"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/btnlogout"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/btnlogout"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/btnlogout"-->
+<!--            app:layout_constraintVertical_bias="1.0" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
